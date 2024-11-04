@@ -1,0 +1,18 @@
+﻿@model demowebsite.Models.Incident
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form asp-action="Report" method="post">
+    <label>Location</label>
+    <input asp-for="Location" />
+    <label>Type</label>
+    <input asp-for="Type" />
+    <label>Date</label>
+    <input asp-for="Date" type="date" />
+    <label>Description</label>
+    <textarea asp-for="Description"></textarea>
+    <button type="submit">Submit Report</button>
+</form>
